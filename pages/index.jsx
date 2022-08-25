@@ -6,7 +6,14 @@ import LandingPageText from "../components/LandingPageText";
 
 export default function Home() {
     return (
+
         <div className={styles.bgimg}>
+            <Head>
+                <title>Niklas Haiden</title>
+                <link rel="icon" href="NH_var2_optimized.svg"/>
+                <meta name="description" content="Hi, I'm Niklas, an aspiring developer. Come check my website out!"/>
+                <meta name={"author"} content={"Niklas Haiden"}/>
+            </Head>
             <Navbar></Navbar>
             <LandingPageText/>
             <div className={"object-bottom pb-1 pl-1 text-white"}>Early Dev Release, far from finished.</div>
