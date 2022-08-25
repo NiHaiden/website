@@ -6,7 +6,7 @@ export default function Navbar() {
             <nav
                 className={"flex flex-wrap items-center justify-between w-full py-4 md:py-0, px-4, text-lg, text-white"}>
                 <div>
-                    <a href="/" className={"pl-0.5"}>
+                    <a href="#" className={"pl-0.5"}>
                         <Image src={"/NH_var2_optimized.svg"} width={100} height={55}></Image>
                     </a>
                 </div>
