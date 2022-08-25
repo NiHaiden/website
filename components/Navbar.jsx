@@ -38,7 +38,7 @@ export default function Navbar() {
                             >
                         </li>
                         <li>
-                            <a className={"transition-all md:p-2 py-2 resume w-28 h-10 text-center block text-white rounded-2xl"} href={"/"}>
+                            <a className={"transition-all md:p-2 py-2 resume w-28 h-10 text-center block text-white rounded-2xl"} href={"#"}>
                                 Resumé
                             </a>
                         </li>
