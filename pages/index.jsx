@@ -13,6 +13,8 @@ export default function Home() {
                 <link rel="icon" href="NH_var2_optimized.svg"/>
                 <meta name="description" content="Hi, I'm Niklas, an aspiring developer. Come check my website out!"/>
                 <meta name={"author"} content={"Niklas Haiden"}/>
+                <meta property="og:image" content="/bgimg.jpg"/>
+
             </Head>
             <Navbar></Navbar>
             <LandingPageText/>
