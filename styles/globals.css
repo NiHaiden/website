@@ -4,9 +4,9 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('/InterV.woff2') format('woff2'),
-    url('/InterV.woff') format('woff'),
-    url('/InterV.ttf') format('truetype');
+    src: url('../public/fonts/InterV.woff2') format('woff2'),
+    url('../public/fonts/InterV.woff') format('woff'),
+    url('../public/fonts/InterV.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
