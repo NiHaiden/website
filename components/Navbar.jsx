@@ -4,10 +4,10 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
     return (
         <header>
             <nav
-                className={"flex flex-wrap items-center justify-between w-full py-4 md:py-0 pl-2 text-lg text-white"}>
+                className={"flex flex-wrap items-center justify-between pl-2 w-full py-4 md:py-4 md:pl-4 md:pr-4 text-lg text-white"}>
                 <div>
-                    <a href="#" className={"pl-0.5"}>
-                        <Image src={"/NH_var2_optimized.svg"} width={100} height={55}></Image>
+                    <a href="#" className={"p-0"}>
+                        <Image src={"/NH_var2_optimized.svg"} width={85} height={60}></Image>
                     </a>
                 </div>
 
