@@ -46,9 +46,16 @@ a {
 }
 
 .resume:hover {
-    background: white; border-color: #9F30FF;
+    background: white;
+    border-color: #9F30FF;
     color: #1BBFFF;
 
 
     transition: 0.5s;
 }
+
+.gradientbackground {
+    background: linear-gradient(114.8deg, #1BBFFF 0%, #B21BFF 78.93%);
+}
+
+

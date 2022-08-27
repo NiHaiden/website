@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Navbar.module.css"
+
 export default function Navbar({navbarOpen, setNavbarOpen}) {
     return (
         <header>
@@ -11,11 +11,28 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
                     </a>
                 </div>
 
-                <svg className={" text-white cursor-pointer md:hidden block"} id={"menubtn"} onClick={() => setNavbarOpen(!navbarOpen)}
-                     fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="80px" height="40px">
-                    <path
-                        d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/>
-                </svg>
+                <button
+                    className="md:hidden flex top-0 right-0 z-20 relative w-20 h-10 text-white focus:outline-none"
+                    onClick={() => setNavbarOpen(!navbarOpen)}
+                >
+                    <div className="absolute w-10 transform -translate-x-1/2 -translate-y-1/2 left-1.5 top-1/2">
+    <span
+        className={`absolute h-0.5 w-10 bg-white transform transition duration-300 ease-in-out ${
+            navbarOpen ? "rotate-45 delay-200" : "-translate-y-1.5"
+        }`}
+    ></span>
+                        <span
+                            className={`absolute h-0.5 bg-white transform transition-all duration-200 ease-in-out ${
+                                navbarOpen ? "w-0 opacity-50" : "w-10 delay-200 opacity-100"
+                            }`}
+                        ></span>
+                        <span
+                            className={`absolute h-0.5 w-10 bg-white transform transition duration-300 ease-in-out ${
+                                navbarOpen ? "-rotate-45 delay-200" : "translate-y-1.5"
+                            }`}
+                        ></span>
+                    </div>
+                </button>
 
                 <div className="hidden w-full md:flex md:items-center md:w-auto" id="menu">
                     <ul
@@ -38,7 +55,8 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
                             >
                         </li>
                         <li>
-                            <a className={"transition-all md:p-2 py-2 resume w-28 h-10 text-center block text-white rounded-2xl"} href={"#"}>
+                            <a className={"transition-all md:p-2 py-2 resume w-28 h-10 text-center block text-white rounded-2xl"}
+                               href={"#"}>
                                 Resumé
                             </a>
                         </li>

@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .bgimg::before {
     content: "";
     display: block;
