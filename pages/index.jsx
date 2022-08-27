@@ -3,10 +3,13 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from "../components/Navbar";
 import LandingPageText from "../components/LandingPageText";
+import MenuOverlay from "../components/MenuOverlay";
+import {useState} from "react";
 
 export default function Home() {
-    return (
+    const [navbarOpen, setNavbarOpen] = useState(false);
 
+    return (
         <div className={styles.bgimg}>
             <Head>
                 <title>Niklas Haiden</title>
@@ -16,7 +19,8 @@ export default function Home() {
                 <meta property="og:image" content="/bgimg.jpg"/>
 
             </Head>
-            <Navbar></Navbar>
+            <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen}></Navbar>
+            <MenuOverlay navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen}></MenuOverlay>
             <LandingPageText/>
             <div className={"object-bottom pb-1 pl-1 text-white"}>Early Dev Release, far from finished.</div>
         </div>
