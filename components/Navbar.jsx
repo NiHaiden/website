@@ -50,13 +50,13 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
                             >
                         </li>
                         <li>
-                            <a className="py-2 pr-14 block text-white" href="#"
+                            <a className="py-2 pr-14 block text-white" href="aboutme"
                             >About Me</a
                             >
                         </li>
                         <li>
                             <a className={"transition-all md:p-2 py-2 resume w-28 h-10 text-center block text-white rounded-2xl"}
-                               href={"#"}>
+                               href={"aboutme"}>
                                 Resumé
                             </a>
                         </li>
