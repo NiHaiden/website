@@ -1,21 +1,39 @@
 
-
 .container {
+    width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 0px;
+    gap: 0px 50px;
     grid-auto-flow: row;
     grid-template-areas:
         "aboutmetext aboutmeimage";
 }
 
 .aboutmetext {
-    color: white; 
+    padding: 20px;
+    font-size: 18px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
     grid-area: aboutmetext;
 }
 
 .aboutmeimage {
-    
+
     grid-area: aboutmeimage;
+}
+
+.centerContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageStyle {
+    width: 100%; height: 100%;
 }
