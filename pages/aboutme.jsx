@@ -6,7 +6,7 @@ export default function AboutMe() {
   return (
     <div className={styles.bgimg}>
       <Navbar></Navbar>
-      <div class={styleAboutMe.centerContainer}>
+      <div className={styleAboutMe.centerContainer}>
       <div className={styleAboutMe.container}>
         <div className={styleAboutMe.aboutmetext}>
           Hello, I am Niklas Haiden, currently living near Vienna in the
