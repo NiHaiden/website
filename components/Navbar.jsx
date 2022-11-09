@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-export default function Navbar({navbarOpen, setNavbarOpen}) {
+export default function Navbar({ navbarOpen, setNavbarOpen }) {
     return (
         <header>
             <nav
                 className={"flex flex-wrap items-center justify-between pl-2 w-full py-4 md:py-4 md:pl-4 md:pr-4 text-lg text-white"}>
                 <div>
-                    <a href="#" className={"p-0"}>
+                    <a href="/" className={"p-0"}>
                         <Image src={"/NH_var2_optimized.svg"} width={85} height={60}></Image>
                     </a>
                 </div>
@@ -16,20 +16,17 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
                     onClick={() => setNavbarOpen(!navbarOpen)}
                 >
                     <div className="absolute w-10 transform -translate-x-1/2 -translate-y-1/2 left-1.5 top-1/2">
-    <span
-        className={`absolute h-0.5 w-10 bg-white transform transition duration-300 ease-in-out ${
-            navbarOpen ? "rotate-45 delay-200" : "-translate-y-1.5"
-        }`}
-    ></span>
                         <span
-                            className={`absolute h-0.5 bg-white transform transition-all duration-200 ease-in-out ${
-                                navbarOpen ? "w-0 opacity-50" : "w-10 delay-200 opacity-100"
-                            }`}
+                            className={`absolute h-0.5 w-10 bg-white transform transition duration-300 ease-in-out ${navbarOpen ? "rotate-45 delay-200" : "-translate-y-1.5"
+                                }`}
                         ></span>
                         <span
-                            className={`absolute h-0.5 w-10 bg-white transform transition duration-300 ease-in-out ${
-                                navbarOpen ? "-rotate-45 delay-200" : "translate-y-1.5"
-                            }`}
+                            className={`absolute h-0.5 bg-white transform transition-all duration-200 ease-in-out ${navbarOpen ? "w-0 opacity-50" : "w-10 delay-200 opacity-100"
+                                }`}
+                        ></span>
+                        <span
+                            className={`absolute h-0.5 w-10 bg-white transform transition duration-300 ease-in-out ${navbarOpen ? "-rotate-45 delay-200" : "translate-y-1.5"
+                                }`}
                         ></span>
                     </div>
                 </button>
@@ -45,7 +42,7 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
               md:pt-0"
                     >
                         <li>
-                            <a className="pr-14 py-2 text-white block" href="#"
+                            <a className="pr-14 py-2 text-white block" href="https://blog.niklas.tech"
                             >Blog</a
                             >
                         </li>
@@ -56,7 +53,7 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
                         </li>
                         <li>
                             <a className={"transition-all md:p-2 py-2 resume w-28 h-10 text-center block text-white rounded-2xl"}
-                               href={"aboutme"}>
+                                href={"aboutme"}>
                                 Resumé
                             </a>
                         </li>
