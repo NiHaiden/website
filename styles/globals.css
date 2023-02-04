@@ -12,20 +12,20 @@
     font-display: swap;
 }
 
-html,
-body {
-    padding: 0;
-    margin: 0;
+@font-face {
+    font-family: 'Martian Mono SemiExpanded';
+    src: url('../public/fonts/MartianMono-SemiExpandedRegular.woff2') format('woff2'),
+    url('../public/fonts/MartianMono-SemiExpandedRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
+
 
 * {
     box-sizing: border-box;
-    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    font-family: "Martian Mono SemiExpanded", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -57,5 +57,3 @@ a {
 .gradientbackground {
     background: linear-gradient(114.8deg, #1BBFFF 0%, #B21BFF 78.93%);
 }
-
-

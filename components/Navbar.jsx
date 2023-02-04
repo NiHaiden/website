@@ -5,12 +5,14 @@ export default function Navbar({ navbarOpen, setNavbarOpen }) {
     return (
         <header>
             <nav
-                className={"flex flex-wrap items-center justify-between pl-2 w-full py-4 md:py-4 md:pl-4 md:pr-4 text-lg text-white"}>
+                className={"flex flex-wrap navbar items-center justify-between pl-2 w-full py-4 md:py-4 md:pl-4 md:pr-4 text-lg text-white"}>
                 <div>
                     <Link href="/" className={"p-0"}>
                         <Image src={"/NH_var2_optimized.svg"} width={85} height={60}></Image>
                     </Link>
                 </div>
+
+
 
                 <button
                     className="md:hidden flex top-0 right-0 z-20 relative w-20 h-10 text-white focus:outline-none"
@@ -35,25 +37,31 @@ export default function Navbar({ navbarOpen, setNavbarOpen }) {
                 <div className="hidden w-full md:flex md:items-center md:w-auto" id="menu">
                     <ul
                         className="
+                      gradientbackground
+
+
               pt-10
-              pr-4
+
+              rounded-3xl
               text-base text-gray-700
               md:flex
               md:justify-between
               md:pt-0"
                     >
                         <li>
-                            <a className="pr-14 py-2 text-white block" href="https://blog.niklas.tech"
-                            >Blog</a
+                            <a className="pl-8 pr-14 py-2 text-white block group  transition duration-300" href="#"
+                            >About Me</a
                             >
+                            <span
+                                className="link-under"></span>
                         </li>
                         <li>
                             <a className="py-2 pr-14 block text-white" href="aboutme"
-                            >About Me</a
+                            >Skills & Projects</a
                             >
                         </li>
                         <li>
-                            <a className={"transition-all md:p-2 py-2 resume w-28 h-10 text-center block text-white rounded-2xl"}
+                            <a className={"py-2 pr-8 block text-white"}
                                 href={"aboutme"}>
                                 Resumé
                             </a>
@@ -72,7 +80,10 @@ function closeOpenMenu() {
     const button = document.querySelector('#menubtn');
     const menu = document.querySelector('#menu');
 
-
     menu.classList.toggle('hidden');
     menu.style.zIndex = 999;
+}
+
+function goToAboutMe() {
+    window.location = "/aboutme"
 }
