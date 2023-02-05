@@ -49,7 +49,7 @@ export default function Navbar({ navbarOpen, setNavbarOpen }) {
               md:pt-0"
                     >
                         <li>
-                            <a className="pl-8 pr-14 py-2 text-white block group  transition duration-300" href="#"
+                            <a className="pl-8 pr-14 py-2 text-white block group  transition duration-300" href="aboutme"
                             >About Me</a
                             >
                             <span

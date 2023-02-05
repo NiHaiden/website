@@ -2,7 +2,7 @@ export default function LandingPageText() {
 
     return (
         <div className={"h-full px-10 flex text-white items-center justify-center flex-grow flex-col"}>
-            <div className={"w-3/4 text-left md:text-6xl block"}>👋 Hi there, welcome to my little corner of
+            <div className={"w-3/4 text-left text-5xl md:text-6xl block"}>👋 Hi there, welcome to my little corner of
                 the web.
             </div>
             <div className={"w-3/4 text-left pt-5 text-2xl md:text-3xl block"}>I am Niklas, currently employed as a

@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar";
 import LandingPageText from "../components/LandingPageText";
 import MenuOverlay from "../components/MenuOverlay";
 import { useState } from "react";
+import SocialLinks from "../components/social";
+
 
 export default function Home() {
     const [navbarOpen, setNavbarOpen] = useState(false);
@@ -21,7 +23,7 @@ export default function Home() {
             <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen}></Navbar>
             <MenuOverlay navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen}></MenuOverlay>
             <LandingPageText/>
-            <div className={"object-bottom pb-1 pl-1 text-white"}>Please note that is a dev version!</div>
+            <SocialLinks/>
         </div>
     )
 }
