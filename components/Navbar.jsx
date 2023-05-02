@@ -37,7 +37,7 @@ export default function Navbar({ navbarOpen, setNavbarOpen }) {
                 <div className="hidden w-full md:flex md:items-center md:w-auto" id="menu">
                     <ul
                         className="
-                      gradientbackground
+
 
 
               pt-10

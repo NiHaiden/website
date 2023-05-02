@@ -18,8 +18,8 @@ export default function AboutMe() {
             <MenuOverlay navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen}></MenuOverlay>
 
 
-            <div className={"h-full px-10 flex text-white items-center justify-center flex-grow flex-col"}>
-                <div className="aboutmecontainer">
+            <div className={"h-full  px-10 flex text-white items-center justify-center flex-grow flex-col"}>
+                <div className="w-1/2 aboutmecontainer">
                     <div className="workandedu glassbackground p-10"><h1 className={"text-2xl"}>My Work Experience and Education</h1>
                     <p><img src={"/icons/school-solid.svg"} width={40} height={40} alt={"School Symbol"}/>HTL St.Pölten Informatik Matura<br/>2017-2022</p></div>
                     <div className="skills glassbackground p-10"> hello world</div>
