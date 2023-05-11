@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Navbar({ navbarOpen, setNavbarOpen }) {
+export default function Navbar({navbarOpen, setNavbarOpen}) {
     return (
         <header>
             <nav
@@ -13,7 +13,6 @@ export default function Navbar({ navbarOpen, setNavbarOpen }) {
                 </div>
 
 
-
                 <button
                     className="md:hidden flex top-0 right-0 z-20 relative w-20 h-10 text-white focus:outline-none"
                     onClick={() => setNavbarOpen(!navbarOpen)}
@@ -21,15 +20,15 @@ export default function Navbar({ navbarOpen, setNavbarOpen }) {
                     <div className="absolute w-10 transform -translate-x-1/2 -translate-y-1/2 left-1.5 top-1/2">
                         <span
                             className={`absolute h-0.5 w-10 bg-white transform transition duration-300 ease-in-out ${navbarOpen ? "rotate-45 delay-200" : "-translate-y-1.5"
-                                }`}
+                            }`}
                         ></span>
                         <span
                             className={`absolute h-0.5 bg-white transform transition-all duration-200 ease-in-out ${navbarOpen ? "w-0 opacity-50" : "w-10 delay-200 opacity-100"
-                                }`}
+                            }`}
                         ></span>
                         <span
                             className={`absolute h-0.5 w-10 bg-white transform transition duration-300 ease-in-out ${navbarOpen ? "-rotate-45 delay-200" : "translate-y-1.5"
-                                }`}
+                            }`}
                         ></span>
                     </div>
                 </button>
@@ -37,19 +36,15 @@ export default function Navbar({ navbarOpen, setNavbarOpen }) {
                 <div className="hidden w-full md:flex md:items-center md:w-auto" id="menu">
                     <ul
                         className="
-
-
-
               pt-10
-
-              rounded-3xl
-              text-base text-gray-700
+              text-xl text-gray-700
               md:flex
               md:justify-between
               md:pt-0"
                     >
                         <li>
-                            <a className="pl-8 pr-14 py-2 text-white block group  transition duration-300" href="aboutme"
+                            <a className="pl-8 pr-14 py-2 text-white block group transition duration-300"
+                               href="aboutme"
                             >About Me</a
                             >
                             <span
@@ -62,7 +57,7 @@ export default function Navbar({ navbarOpen, setNavbarOpen }) {
                         </li>
                         <li>
                             <a className={"py-2 pr-8 block text-white"}
-                                href={"aboutme"}>
+                               href={"aboutme"}>
                                 Resumé
                             </a>
                         </li>
