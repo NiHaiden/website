@@ -1,14 +1,9 @@
 import styles from "../styles/Home.module.css";
-import styleAboutMe from "../styles/Aboutme.module.css";
 import Navbar from "../components/Navbar";
 import {useState} from "react";
 import MenuOverlay from "../components/MenuOverlay";
 import SocialLinks from "../components/social";
-import Image from "next/image";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBookOpen} from "@fortawesome/free-solid-svg-icons";
-import {library} from "@fortawesome/fontawesome-svg-core";
-library.add(faBookOpen);
+
 export default function AboutMe() {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -19,14 +14,35 @@ export default function AboutMe() {
 
 
             <div className={"h-full  px-10 flex text-white items-center justify-center flex-grow flex-col"}>
-                <div className="w-1/2 aboutmecontainer">
-                    <div className="workandedu glassbackground p-10"><h1 className={"text-2xl"}>My Work Experience and Education</h1>
-                    <p><img src={"/icons/school-solid.svg"} width={40} height={40} alt={"School Symbol"}/>HTL St.Pölten Informatik Matura<br/>2017-2022</p></div>
+                <div className="md:w-1/2 w-4/5 max-w-3xl aboutmecontainer">
+                    <div className="workandedu glassbackground p-10"><h1 className={"text-2xl mb-3"}>My Work Experience
+                        and
+                        Education</h1>
+                        <div className={"grid gap-10 md:grid-cols-1 md:grid-rows-1 lg:grid-cols-2 lg:grid-rows-1 xl:grid-cols-2 xl:grid-rows-2 2xl:grid-cols-3 2xl:grid-rows-1 grid-cols-1 grid-rows-3"}>
+                            <div className={"p-10 rounded-lg gradientbackground"}>
+                                <p className={"text-2xl mb-0.5 text-left"}><a href={"https://htlstp.ac.at"}>HTL
+                                    St.Pölten</a><br/> Informatik Matura</p>
+                                <p className={"text-xl"}>2017-2022</p>
+                            </div>
+                            <div className={"p-10 rounded-lg gradientbackground"}>
+                                <p className={"text-2xl mb-0.5 text-left"}><a href={"https://bernard-gruppe.com"}>RED Bernard GmbH</a><br/>Internship</p>
+                                <p className={"text-xl"}>2020-2022</p>
+                            </div>
+                            <div className={"p-10 rounded-lg gradientbackground"}>
+                                <p className={"text-2xl mb-0.5 text-left"}><a href={"https://gdv-dl.de"}>GDV-DL GmbH</a><br/> Azubi FiAe</p>
+                                <p className={"text-xl"}>2023-present</p>
+                            </div>
+                        </div>
+                    </div>
                     <div className="skills glassbackground p-10"> hello world</div>
                     <div className="shortaboutme glassbackground p-10 flex items-center justify-center flex-col">
-                        <h1 className={"text-4xl"}>Hi. My Name is Niklas!</h1><br/>
+                        <h1 className={"text-4xl"}>Hi there! My Name is Niklas.</h1><br/>
 
-                        <p>I am currently employed as a civl servant (&quot;Zivildiener&quot;) in my mandatory military service. I am 20 years old and I love working with computers and various different technologies. My interests reach from DevOps to Software Engineering and everything inbetween. When I am not sitting in front of my computer, I like to travel and take lots of beautiful pictures, some of which you can find on my Instagram page ;).  </p>
+                        <p className={"text-lg"}>Since the beginning of my prime I have been interested in computers,
+                            from sending my first email at the age of 5 and destroying functioning OS installs to attending an IT vocational school from 2017-2022.
+                            My interests reach far and wide, from the field of DevOps to, especially, programming various things in different languages.
+                            When I'm not consuming blue light in front of a screen, I'm out and about, I especially like to visit various places and take photos of them.
+                        Feel free to browse around my various profiles and let's connect on Linkedin!</p>
                     </div>
                 </div>
             </div>
@@ -34,5 +50,4 @@ export default function AboutMe() {
             <SocialLinks></SocialLinks>
         </div>
     );
-    // https://paste.niklas.life/ugeyufuvag.sql
 }
