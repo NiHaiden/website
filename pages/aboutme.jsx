@@ -41,8 +41,8 @@ export default function AboutMe() {
                         <p className={"text-lg"}>Since the beginning of my prime I have been interested in computers,
                             from sending my first email at the age of 5 and destroying functioning OS installs to attending an IT vocational school from 2017-2022.
                             My interests reach far and wide, from the field of DevOps to, especially, programming various things in different languages.
-                            When I'm not consuming blue light in front of a screen, I'm out and about, I especially like to visit various places and take photos of them.
-                        Feel free to browse around my various profiles and let's connect on Linkedin!</p>
+                            When I&#39;m not consuming blue light in front of a screen, I&#39;m out and about, I especially like to visit various places and take photos of them.
+                        Feel free to browse around my various profiles and let&#39;s connect on Linkedin!</p>
                     </div>
                 </div>
             </div>
