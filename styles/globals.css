@@ -57,8 +57,10 @@
     background: linear-gradient(114.8deg, #1BBFFF 0%, #B21BFF 78.93%);
 }
 
-.icons-gradient{
-
+.shadow {
+    -webkit-box-shadow: 17px 4px 84px -28px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 17px 4px 84px -28px rgba(0, 0, 0, 0.5);
+    box-shadow: 17px 4px 84px -28px rgba(0, 0, 0, 0.5);
 }
 
 .glassbackground {
@@ -97,6 +99,26 @@
     grid-column: 1;
 }
 
+.gradienttext {
+    background: linear-gradient(114.8deg, #1BBFFF 0%, #B21BFF 78.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.backgroundimg {
+    background-image: url("/bgimg2.jpg");
+}
+
+.linkslide {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: black;
+    border-radius: 20px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.linkslide:hover {
+    background-color: #1BBFFF;
+}
 
 @media screen and (max-width: 768px) {
     .aboutmecontainer {

@@ -5,7 +5,7 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
     return (
         <header>
             <nav
-                className={"flex flex-wrap navbar items-center justify-between pl-2 w-full py-4 md:py-4 md:pl-4 md:pr-4 text-lg text-white"}>
+                className={"flex flex-wrap navbar items-center justify-between pl-2 w-full py-4 md:py-4 md:pl-4 md:pr-4 text-lg "}>
                 <div>
                     <Link href="/" className={"p-0"}>
                         <Image src={"/NH_var2_optimized.svg"} width={85} height={60}></Image>
@@ -37,29 +37,43 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
                     <ul
                         className="
               pt-10
-              text-xl text-gray-700
+              text-2xl text-black
               md:flex
               md:justify-between
-              md:pt-0"
+              md:pt-0
+              "
                     >
                         <li>
-                            <a className="pl-8 pr-14 py-2 text-white block group transition duration-300"
+                            <a className="p-1.5 py-2 text-black block group transition duration-300 linkslide  "
                                href="aboutme"
-                            >About Me</a
                             >
-                            <span
-                                className="link-under"></span>
-                        </li>
-                        <li>
-                            <a className="py-2 pr-14 block text-white" href="aboutme"
-                            >Skills & Projects</a
+                                <div
+                                    className={"text-black text-transparent bg-clip-text bg-gradient-to-br from-startingblue to-endingpurple"}>About
+                                    Me
+                                </div>
+                            </a
                             >
                         </li>
                         <li>
-                            <a className={"py-2 pr-8 block text-white"}
-                               href={"aboutme"}>
-                                Resumé
-                            </a>
+                            <a className="pl-8  py-2 text-black block group transition duration-300 linkslide  "
+                               href="aboutme"
+                            >
+                                <div
+                                    className={"text-black text-transparent bg-clip-text bg-gradient-to-br from-startingblue to-endingpurple"}>Skills
+                                    and Projects
+                                </div>
+                            </a
+                            >
+                        </li>
+                        <li>
+                            <a className="pl-8  py-2 text-black block group transition duration-300 linkslide  "
+                               href="aboutme"
+                            >
+                                <div
+                                    className={"text-black text-transparent bg-clip-text bg-gradient-to-br from-startingblue to-endingpurple"}>Resumè
+                                </div>
+                            </a
+                            >
                         </li>
 
 
