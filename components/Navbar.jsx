@@ -19,15 +19,15 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
                 >
                     <div className="absolute w-10 transform -translate-x-1/2 -translate-y-1/2 left-1.5 top-1/2">
                         <span
-                            className={`absolute h-0.5 w-10 bg-white transform transition duration-300 ease-in-out ${navbarOpen ? "rotate-45 delay-200" : "-translate-y-1.5"
+                            className={`absolute h-0.5 w-10 bg-black transform transition duration-300 ease-in-out ${navbarOpen ? "rotate-45 delay-200 bg-white" : "-translate-y-1.5"
                             }`}
                         ></span>
                         <span
-                            className={`absolute h-0.5 bg-white transform transition-all duration-200 ease-in-out ${navbarOpen ? "w-0 opacity-50" : "w-10 delay-200 opacity-100"
+                            className={`absolute h-0.5 bg-black transform transition-all duration-200 ease-in-out ${navbarOpen ? "w-0 opacity-50 bg-white" : "w-10 delay-200 opacity-100"
                             }`}
                         ></span>
                         <span
-                            className={`absolute h-0.5 w-10 bg-white transform transition duration-300 ease-in-out ${navbarOpen ? "-rotate-45 delay-200" : "translate-y-1.5"
+                            className={`absolute h-0.5 w-10 bg-black transform transition duration-300 ease-in-out ${navbarOpen ? "-rotate-45 delay-200 bg-white" : "translate-y-1.5"
                             }`}
                         ></span>
                     </div>
@@ -41,36 +41,38 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
               md:flex
               md:justify-between
               md:pt-0
+              hover:text-white
+              gap-1
               "
                     >
                         <li>
-                            <a className="p-1.5 py-2 text-black block group transition duration-300 linkslide  "
+                            <a className="p-1.5 py-2 text-black block group transition duration-300 linkslide  hover:text-white p-3 rounded-3xl"
                                href="aboutme"
                             >
                                 <div
-                                    className={"text-black text-transparent bg-clip-text bg-gradient-to-br from-startingblue to-endingpurple"}>About
+                                    className={"text-black text-transparent bg-clip-text bg-gradient-to-br from-startingblue to-endingpurple hover:text-white p-1.5"}>About
                                     Me
                                 </div>
                             </a
                             >
                         </li>
                         <li>
-                            <a className="pl-8  py-2 text-black block group transition duration-300 linkslide  "
-                               href="aboutme"
+                            <a className=" py-2 text-black block group transition duration-300 linkslide hover:text-white p-3"
+                               href="projects"
                             >
                                 <div
-                                    className={"text-black text-transparent bg-clip-text bg-gradient-to-br from-startingblue to-endingpurple"}>Skills
+                                    className={"text-black text-transparent bg-clip-text bg-gradient-to-br from-startingblue to-endingpurple hover:text-white p-1.5"}>Skills
                                     and Projects
                                 </div>
                             </a
                             >
                         </li>
                         <li>
-                            <a className="pl-8  py-2 text-black block group transition duration-300 linkslide  "
+                            <a className="  py-2 text-black block group transition duration-300 linkslide hover:text-white p-3"
                                href="aboutme"
                             >
                                 <div
-                                    className={"text-black text-transparent bg-clip-text bg-gradient-to-br from-startingblue to-endingpurple"}>Resumè
+                                    className={"text-black text-transparent bg-clip-text bg-gradient-to-br from-startingblue to-endingpurple hover:text-white p-1.5"}>Resumè
                                 </div>
                             </a
                             >
@@ -91,8 +93,4 @@ function closeOpenMenu() {
 
     menu.classList.toggle('hidden');
     menu.style.zIndex = 999;
-}
-
-function goToAboutMe() {
-    window.location = "/aboutme"
 }

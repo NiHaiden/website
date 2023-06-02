@@ -25,9 +25,9 @@ export default function Home() {
             <div
                 className={"px-10 flex text-white items-center justify-center flex-grow flex-col"}>
                 <div
-                    className={"backgroundimg hover:backgroundimg2 bg-fixed bg-center bg-cover bg-no-repeat w-1/2 p-4 rounded-3xl border hover:border-blue-500 text-center hover:bg-clip-text hover:text-transparent hover:shadow-2xl hover:transition-all transition-all duration-500"}>
-                    <div className={"font-black md:text-extrabig"}>👋 Hi there!</div>
-                    <div className={"pt-5 text-4xl md:text-4xl"}>I am Niklas, currently employed as a
+                    className={"backgroundimg hover:backgroundimg2 bg-fixed bg-center bg-cover bg-no-repeat min-w-fit min-h-fit md:min-w-0 md:h-1/2 w-1/2 p-4 lg:w-3/4 lg:h-3/4 rounded-3xl border hover:border-blue-500 text-center hover:bg-clip-text hover:text-transparent hover:shadow-2xl hover:transition-all transition-all duration-500"}>
+                    <div className={"font-black text-5xl sm:text-6xl lg:text-9xl xl:text-extrabig"}>👋 Hi there!</div>
+                    <div className={"pt-5 text-xl sm:text-4xl"}>I am Niklas, currently employed as a
                         civil servant and aspiring to become a Fullstack Dev in the future.
                     </div>
                 </div>
