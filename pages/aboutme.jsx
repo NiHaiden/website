@@ -39,7 +39,7 @@ export default function AboutMe() {
 
                     <div
                         className="shortaboutme gradientbackground shadow text-white rounded-2xl drop-shadow-2xl p-10 flex items-center justify-center flex-col">
-                        <h1 className={"text-7xl font-black "}>My name is Niklas.</h1><br/>
+                        <h1 className={"text-6xl font-black "}>Sitting in front of a screen since the beginning of time.</h1><br/>
 
                         <p className={"text-lg"}>Since the beginning of my prime I have been interested in computers,
                             from sending my first email at the age of 5 and destroying functioning OS installs to
