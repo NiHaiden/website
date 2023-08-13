@@ -58,10 +58,10 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
                         </li>
                         <li>
                             <a className=" py-2 text-black block group transition duration-300 linkslide hover:text-white p-3"
-                               href="projects"
+                               href="hobbies"
                             >
                                 <div
-                                    className={"text-black text-transparent bg-clip-text bg-gradient-to-br from-startingblue to-endingpurple hover:text-white p-1.5"}>Skills
+                                    className={"text-black text-transparent bg-clip-text bg-gradient-to-br from-startingblue to-endingpurple hover:text-white p-1.5"}>Hobbies
                                     and Projects
                                 </div>
                             </a

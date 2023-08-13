@@ -11,7 +11,7 @@ export default function SocialLinks() {
                     rel="noreferrer"><img src={"/icons/linkedin-in.svg"}
                                           width={35}
                                           height={60}/></a>
-                <a href={"mailto:nkls@duck.com"}><img
+                <a href={"mailto:niklas@niklas.tech"}><img
                     src={"/icons/envelope-regular.svg"}
                     width={35} height={60}/></a></div>
         </div>

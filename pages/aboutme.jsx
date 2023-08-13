@@ -13,7 +13,7 @@ export default function AboutMe() {
             <MenuOverlay navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen}></MenuOverlay>
 
 
-            <div className={"h-full  px-10 flex text-black items-center justify-center flex-grow flex-col"}>
+            <div className={"h-full px-10 flex text-black items-center justify-center flex-grow flex-col"}>
                 <div className="md:w-1/2 w-4/5 max-w-3xl aboutmecontainer">
                     <div className="workandedu">
                         <div className={"text-7xl mb-3 font-black gradienttext"}>Work and Education</div>

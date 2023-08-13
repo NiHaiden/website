@@ -63,41 +63,9 @@
     box-shadow: 17px 4px 84px -28px rgba(0, 0, 0, 0.5);
 }
 
-.glassbackground {
-    background: rgba(144, 19, 254, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
 
 
-.aboutmecontainer {
-    display: grid;
-    justify-content: space-evenly;
-    gap: 50px;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-}
 
-.workandedu {
-    grid-area: workandedu;
-    grid-row: 2;
-    grid-column: 1;
-}
-
-.skills {
-    grid-area: skills;
-    grid-row: 3;
-    grid-column: 1;
-}
-
-.shortaboutme {
-    grid-area: shortaboutme;
-    grid-row: 1;
-    grid-column: 1;
-}
 
 .gradienttext {
     background: linear-gradient(114.8deg, #1BBFFF 0%, #B21BFF 78.93%);
@@ -106,7 +74,7 @@
 }
 
 .backgroundimg {
-    background-image: url("/bgimg2.jpg");
+    background-image: url("/bgimg4.jpg");
 }
 
 .linkslide {
@@ -121,25 +89,5 @@
     color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-    .aboutmecontainer {
-        justify-content: space-evenly;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-    }
 
-    .workandedu {
-        grid-row: 2;
-        grid-column: 1;
-    }
 
-    .skills {
-        grid-row: 3;
-        grid-column: 1;
-    }
-
-    .shortaboutme {
-        grid-row: 1;
-        grid-column: 1;
-    }
-}
