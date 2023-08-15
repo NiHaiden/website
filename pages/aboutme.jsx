@@ -13,12 +13,12 @@ export default function AboutMe() {
             <MenuOverlay navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen}></MenuOverlay>
 
 
-            <div className={"h-full px-10 flex text-black items-center justify-center flex-grow flex-col"}>
-                <div className="md:w-1/2 w-4/5 max-w-3xl aboutmecontainer">
+            <div className={"flex flex-col flex-grow justify-center items-center px-10 h-full text-black"}>
+                <div className="w-4/5 max-w-3xl md:w-1/2 aboutmecontainer">
                     <div className="workandedu">
-                        <div className={"text-7xl mb-3 font-black gradienttext"}>Work and Education</div>
+                        <div className={"mb-3 text-7xl font-black gradienttext"}>Work and Education</div>
                         <div
-                            className={"grid gap-10 md:grid-cols-1 md:grid-rows-1 lg:grid-cols-2 lg:grid-rows-1 xl:grid-cols-2 xl:grid-rows-2 2xl:grid-cols-3 2xl:grid-rows-1 grid-cols-1 grid-rows-3"}>
+                            className={"grid grid-cols-1 grid-rows-3 gap-10 md:grid-cols-1 md:grid-rows-1 lg:grid-cols-2 lg:grid-rows-1 xl:grid-cols-2 xl:grid-rows-2 2xl:grid-cols-3 2xl:grid-rows-1"}>
                             <div className={"p-10 text-white rounded-xl shadow gradientbackground"}>
                                 <p className={"text-2xl mb-0.5 text-left"}><a href={"https://htlstp.ac.at"}>HTL
                                     St.Pölten</a><br/> Informatik Matura</p>
@@ -29,7 +29,7 @@ export default function AboutMe() {
                                     Bernard GmbH</a><br/>Internship</p>
                                 <p className={"text-xl"}>2020-2022</p>
                             </div>
-                            <div className={"p-10 text-white rounded-xl  shadow gradientbackground"}>
+                            <div className={"p-10 text-white rounded-xl shadow gradientbackground"}>
                                 <p className={"text-2xl mb-0.5 text-left"}><a href={"https://gdv-dl.de"}>GDV-DL GmbH</a><br/> Azubi
                                     FiAe</p>
                                 <p className={"text-xl"}>2023-present</p>
@@ -38,8 +38,8 @@ export default function AboutMe() {
                     </div>
 
                     <div
-                        className="shortaboutme gradientbackground shadow text-white rounded-2xl drop-shadow-2xl p-10 flex items-center justify-center flex-col">
-                        <h1 className={"text-6xl font-black "}>Sitting in front of a screen since the beginning of time.</h1><br/>
+                        className="flex flex-col justify-center items-center p-10 text-white rounded-2xl shadow drop-shadow-2xl shortaboutme gradientbackground">
+                        <h1 className={"text-6xl font-black"}>Sitting in front of a screen since the beginning of time.</h1><br/>
 
                         <p className={"text-lg"}>Since the beginning of my prime I have been interested in computers,
                             from sending my first email at the age of 5 and destroying functioning OS installs to
@@ -56,5 +56,5 @@ export default function AboutMe() {
             <SocialLinks></SocialLinks>
         </div>
     );
-// <!-- <div className="skills glassbackground p-10"> hello world</div>-->
+// <!-- <div className="p-10 skills glassbackground"> hello world</div>-->
 }

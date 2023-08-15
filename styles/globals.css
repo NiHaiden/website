@@ -88,6 +88,31 @@
     background: linear-gradient(114.8deg, #1BBFFF 0%, #B21BFF 78.93%);
     color: #fff;
 }
+´
+.aboutmecontainer {
+    display: grid;
+    justify-content: space-evenly;
+    gap: 50px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
 
+.workandedu {
+    grid-area: workandedu;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.skills {
+    grid-area: skills;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.shortaboutme {
+    grid-area: shortaboutme;
+    grid-row: 1;
+    grid-column: 1;
+}
 
 
