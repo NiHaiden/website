@@ -69,7 +69,7 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
                         </li>
                         <li>
                             <a className="  py-2 text-black block group transition duration-300 linkslide hover:text-white p-3"
-                               href="aboutme"
+                               href="https://appwrite.niklas.tech/v1/storage/buckets/64ef6a6d3dd6478ea89a/files/64ef6a75a9590e107064/view?project=64b6b4ca36481febbb70&mode=admin"
                             >
                                 <div
                                     className={"text-black text-transparent bg-clip-text bg-gradient-to-br from-startingblue to-endingpurple hover:text-white p-1.5"}>Resumè
