@@ -15,7 +15,7 @@ export default function MenuOverlay({navbarOpen, setNavbarOpen}) {
                 <a className={"h-full w-full py-2 text-4xl text-white"}
                    onClick={() => {
                        setNavbarOpen(false);
-                   }} href={"#"}>
+                   }} href={"https://appwrite.niklas.tech/v1/storage/buckets/64ef6a6d3dd6478ea89a/files/64ef6a75a9590e107064/view?project=64b6b4ca36481febbb70"}>
                     Resumè
                 </a>
             </li>
