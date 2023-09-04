@@ -44,6 +44,7 @@ export default function HobbiesProjects({ files }) {
   );
 }
 
+/*this gets the file urls from the appwrite server*/
 export async function getStaticProps() {
   const client = new Client();
 
