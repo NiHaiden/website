@@ -19,7 +19,7 @@ export default function AboutMe() {
 
                     <div
                         className="flex flex-col justify-center items-center p-10 text-white rounded-2xl shadow drop-shadow-2xl shortaboutme gradientbackground">
-                        <h1 className={"text-6xl font-black"}>Sitting in front of a screen since the beginning of time.</h1><br/>
+                        <h1 className={"text-4xl md:text-6xl font-black"}>Sitting in front of a screen since the beginning of time.</h1><br/>
 
                         <p className={"text-lg"}>Since the beginning of my prime I have been interested in computers,
                             from sending my first email at the age of 5 and destroying functioning OS installs to

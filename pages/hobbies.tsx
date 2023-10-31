@@ -4,6 +4,7 @@ import SocialLinks from "../components/social";
 import styles from "../styles/Home.module.css";
 import MenuOverlay from "../components/MenuOverlay";
 import { Client, Models, Storage } from "appwrite";
+import {getClient} from "../components/appwrite.service";
 
 export default function HobbiesProjects({ files }) {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -45,14 +46,9 @@ export default function HobbiesProjects({ files }) {
 }
 
 /*this gets the file urls from the appwrite server*/
-export async function getStaticProps() {
-  const client = new Client();
+export async function getServerSideProps() {
 
-  client
-    .setEndpoint("https://appwrite.niklas.tech/v1")
-    .setProject("64b6b4ca36481febbb70");
-
-  const storage = new Storage(client);
+  const storage = new Storage(getClient());
 
   const promise = storage.listFiles("64b6f78890ebd08b8d99");
 

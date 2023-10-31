@@ -1,6 +1,6 @@
 import {Client} from "appwrite";
 
-export function AppwriteService(){
+export function getClient(){
     const client = new Client();
 
     client
@@ -9,3 +9,4 @@ export function AppwriteService(){
 
     return client
 }
+
