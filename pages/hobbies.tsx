@@ -1,9 +1,11 @@
-import { useState } from "react";
+import {useState} from "react";
 import Navbar from "../components/Navbar";
 import SocialLinks from "../components/social";
 import styles from "../styles/Home.module.css";
 import MenuOverlay from "../components/MenuOverlay";
-import { Client, Models, Storage } from "appwrite";
+import {getFileUrls} from "../components/service/appwrite.service";
+import ProjectCard from "../components/ProjectCard";
+import GridImage from "../components/GridImage";
 
 export default function HobbiesProjects({ files }) {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -15,57 +17,37 @@ export default function HobbiesProjects({ files }) {
         navbarOpen={navbarOpen}
         setNavbarOpen={setNavbarOpen}
       ></MenuOverlay>
+        <div
+            className={
+                "flex flex-col flex-grow justify-center items-center px-10 h-full text-black"
+            }
+        >
 
-      <div
-        className={
-          "flex flex-col flex-grow justify-center items-center px-10 h-full text-black"
-        }
-      >
-        <div className="flex flex-col justify-center items-center p-10 w-full text-white rounded-2xl shadow drop-shadow-2xl shortaboutme gradientbackground">
-          <h1 className={"text-5xl font-black"}>
-            I like to take pictures. Lot&#39;s of them.
-          </h1>
-          <br />
-
-          <p>Wanna see some?</p>
+            <h1 className={"text-8xl font-black gradienttext"}>Projects</h1>
+            <div className={"w-full mt-6 mb-6 grid grid-cols-1 md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-5 gap-0"}>
+                <ProjectCard title={"Aries, your personal PaaS."}
+                             description={"Exploring a client-server-agent architecture and the various elements of Spring is one of the goals of this project." +
+                                 " I want to explore building a personal Platform-as-a-Service from scratch. Remix + Spring + a Docker Agent is the end-goal."}/>
+                <ProjectCard title={"Holà, a personal dashboard."}
+                             description={"Holá is a personal project where I intend to learn RemixJS by building a Full-Stack JavaScript App " +
+                                 "where a user can add various links to selfhosted applications."}/>
+                <ProjectCard title={"Aurora, a personalized Linux OS."}
+                             description={"Aurora is a container-like OS Image built on top of Fedora Kinoite and " +
+                                 "features various customizations and built-in tools to get started quicker when setting up a new development machine."}/>
+            </div>
+            <h1 className={"text-8xl font-black gradienttext"}>Photography</h1>
+            <div className="gap-1 mt-10 columns-1 md:columns-2 lg:columns-3">
+                {files.map((url) => (
+                    <GridImage key={url} url={url}/>
+                ))}
+            </div>
         </div>
-        <div className="gap-1 mt-10 columns-1 md:columns-2 lg:columns-3">
-          {files.map((url) => (
-            <img
-              src={url}
-              key={url}
-              className={"mb-3 w-full rounded-3xl drop-shadow-md aspect-auto"}
-            />
-          ))}
-        </div>
-      </div>
-      <SocialLinks />
+        <SocialLinks/>
     </div>
   );
 }
 
-export async function getStaticProps() {
-  const client = new Client();
-
-  client
-    .setEndpoint("https://appwrite.niklas.tech/v1")
-    .setProject("64b6b4ca36481febbb70");
-
-  const storage = new Storage(client);
-
-  const promise = storage.listFiles("64b6f78890ebd08b8d99");
-
-  const files: Models.File[] = await promise.then((response) => {
-    return response.files;
-  });
-
-  const fileurls: string[] = [];
-
-  files.forEach((file) => {
-    fileurls.push(
-      storage.getFilePreview("64b6f78890ebd08b8d99", file.$id, undefined, 700).href
-    );
-  });
-
-  return { props: { files: fileurls } };
+/*this gets the file urls from the appwrite server*/
+export async function getServerSideProps() {
+    return {props: {files: await getFileUrls()}};
 }

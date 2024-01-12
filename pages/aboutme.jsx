@@ -19,7 +19,7 @@ export default function AboutMe() {
 
                     <div
                         className="flex flex-col justify-center items-center p-10 text-white rounded-2xl shadow drop-shadow-2xl shortaboutme gradientbackground">
-                        <h1 className={"text-6xl font-black"}>Sitting in front of a screen since the beginning of time.</h1><br/>
+                        <h1 className={"text-4xl md:text-6xl font-black"}>Sitting in front of a screen since the beginning of time.</h1><br/>
 
                         <p className={"text-lg"}>Since the beginning of my prime I have been interested in computers,
                             from sending my first email at the age of 5 and destroying functioning OS installs to
@@ -44,11 +44,7 @@ export default function AboutMe() {
                                     Bernard GmbH</a><br/>Internship</p>
                                 <p className={"text-xl"}>2020-2022</p>
                             </div>
-                            <div className={"p-10 text-white rounded-xl shadow gradientbackground"}>
-                                <p className={"text-2xl mb-0.5 text-left"}><a href={"https://gdv-dl.de"}>GDV-DL GmbH</a><br/> Azubi
-                                    FiAe</p>
-                                <p className={"text-xl"}>2023-present</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -58,4 +54,11 @@ export default function AboutMe() {
         </div>
     );
 // <!-- <div className="p-10 skills glassbackground"> hello world</div>-->
+    /*
+       <div className={"p-10 text-white rounded-xl shadow gradientbackground"}>
+                                <p className={"text-2xl mb-0.5 text-left"}><a href={"https://gdv-dl.de"}>GDV-DL GmbH</a><br/> Azubi
+                                    FiAe</p>
+                                <p className={"text-xl"}>2023-present</p>
+                            </div>
+     */
 }

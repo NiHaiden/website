@@ -5,10 +5,10 @@ export default function Navbar({navbarOpen, setNavbarOpen}) {
     return (
         <header>
             <nav
-                className={"flex flex-wrap navbar items-center justify-between pl-2 w-full py-4 md:py-4 md:pl-4 md:pr-4 text-lg "}>
+                className={"flex flex-wrap navbar items-center justify-between pl-4 w-full py-4 md:py-4 md:pl-4 md:pr-4 text-lg "}>
                 <div>
                     <Link href="/" className={"p-0"}>
-                        <Image src={"/NH_var2_optimized.svg"} width={85} height={60}></Image>
+                        <Image src={"/NH_var2_optimized.svg"} width={75} height={40}></Image>
                     </Link>
                 </div>
 
