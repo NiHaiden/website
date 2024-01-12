@@ -22,21 +22,13 @@ export default function HobbiesProjects({ files }) {
           "flex flex-col flex-grow justify-center items-center px-10 h-full text-black"
         }
       >
-        <div className="flex flex-col justify-center items-center p-10 w-full text-white rounded-2xl shadow drop-shadow-2xl shortaboutme gradientbackground">
-          <h1 className={"text-5xl font-black"}>My Projects</h1>
-          <br />
-
-          <p>
-            Building and shipping things is fun. My tech stack usually consists
-            of React on the frontend and Java + Spring Boot on the backend.
-          </p>
-        </div>
-        <div className="flex flex-row justify-start items-center">
-          <div className={"p-2 mt-10 w-1/5 h-1/5 rounded-2xl border"}>
-            <h1 className="py-3 text-4xl">Aries, your personal PaaS.</h1>
-            <p>
+          <h1 className={"text-7xl font-black gradienttext"}>Projects</h1>
+        <div className="w-full flex flex-row justify-start items-center">
+          <div className={"p-5 mb-10 mt-10 w-2/5 h-1/3 rounded-2xl border gradientbackground shadow-xl"}>
+            <h1 className="text-4xl font-semibold text-white">Aries, your personal PaaS.</h1>
+            <p className={"text-white"}>
               Aries is one of the big projects I have that I like to work on. I
-              want to build something like Heroku where you can just define a
+              want to build a system like Heroku where you can just define a
               docker image and deploy it with necessary databases and other
               tools.
             </p>

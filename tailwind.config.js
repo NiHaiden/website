@@ -14,9 +14,6 @@ module.exports = {
                 "startingblue": "#1BBFFF",
                 "endingpurple": "#B21BFF",
             },
-            backgroundImage: {
-                "bgimg": "url('/bgimg2.jpg')"
-            }
         },
     },
     plugins: [],
