@@ -44,11 +44,7 @@ export default function AboutMe() {
                                     Bernard GmbH</a><br/>Internship</p>
                                 <p className={"text-xl"}>2020-2022</p>
                             </div>
-                            <div className={"p-10 text-white rounded-xl shadow gradientbackground"}>
-                                <p className={"text-2xl mb-0.5 text-left"}><a href={"https://gdv-dl.de"}>GDV-DL GmbH</a><br/> Azubi
-                                    FiAe</p>
-                                <p className={"text-xl"}>2023-present</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -58,4 +54,11 @@ export default function AboutMe() {
         </div>
     );
 // <!-- <div className="p-10 skills glassbackground"> hello world</div>-->
+    /*
+       <div className={"p-10 text-white rounded-xl shadow gradientbackground"}>
+                                <p className={"text-2xl mb-0.5 text-left"}><a href={"https://gdv-dl.de"}>GDV-DL GmbH</a><br/> Azubi
+                                    FiAe</p>
+                                <p className={"text-xl"}>2023-present</p>
+                            </div>
+     */
 }
