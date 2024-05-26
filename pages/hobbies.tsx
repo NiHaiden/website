@@ -24,13 +24,11 @@ export default function HobbiesProjects({ files }) {
         >
 
             <h1 className={"text-8xl font-black gradienttext"}>Projects</h1>
-            <div className={"w-full mt-6 mb-6 grid grid-cols-1 md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-5 gap-0"}>
-                <ProjectCard title={"Aries, your personal PaaS."}
+            <div className={"w-full mt-6 mb-6 grid grid-cols-1 md:grid-cols-2 md:gap-2 lg:grid-cols-2 lg:gap-5 gap-0"}>
+                <ProjectCard title={"Raven, your personal PaaS."}
                              description={"Exploring a client-server-agent architecture and the various elements of Spring is one of the goals of this project." +
-                                 " I want to explore building a personal Platform-as-a-Service from scratch. Remix + Spring + a Docker Agent is the end-goal."}/>
-                <ProjectCard title={"Holà, a personal dashboard."}
-                             description={"Holá is a personal project where I intend to learn RemixJS by building a Full-Stack JavaScript App " +
-                                 "where a user can add various links to selfhosted applications."}/>
+                                 " I want to explore building a personal Platform-as-a-Service from scratch. NextJS + Spring + a Docker Agent is the end-goal."}/>
+            
                 <ProjectCard title={"Aurora, a personalized Linux OS."}
                              description={"Aurora is a container-like OS Image built on top of Fedora Kinoite and " +
                                  "features various customizations and built-in tools to get started quicker when setting up a new development machine."}/>

@@ -4,8 +4,8 @@ export function getClient() {
     const client = new Client();
 
     client
-        .setEndpoint('https://appwrite.niklas.tech/v1')
-        .setProject('64b6b4ca36481febbb70');
+        .setEndpoint(process.env.APPWRITE_URL || "")
+        .setProject(process.env.APPWRITE_PROJECT_ID || "");
 
     return client
 }
@@ -14,7 +14,7 @@ export function getClient() {
 export async function getFileUrls() {
     const storage = new Storage(getClient());
 
-    const promise = storage.listFiles("64b6f78890ebd08b8d99");
+    const promise = storage.listFiles(process.env.APPWRITE_PHOTO_BUCKETID);
 
     const files: Models.File[] = await promise.then((response) => {
         return response.files;
@@ -24,7 +24,7 @@ export async function getFileUrls() {
 
     files.forEach((file) => {
         fileurls.push(
-            storage.getFilePreview("64b6f78890ebd08b8d99", file.$id, undefined, 700)
+            storage.getFilePreview(process.env.APPWRITE_PHOTO_BUCKETID, file.$id, undefined, 700)
                 .href
         );
     });
