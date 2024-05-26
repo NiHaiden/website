@@ -45,7 +45,7 @@ export default function AboutMe() {
                                 <p className={"text-xl"}>2020-2022</p>
                             </div>
                             <div className={"p-10 text-white rounded-xl shadow gradientbackground"}>
-                                <p className={"text-2xl mb-0.5 text-left"}><a href={"https://bernard-gruppe.com"}>Austrian Patent Office</a><br/>Software Engineer</p>
+                                <p className={"text-2xl mb-0.5 text-left"}><a href={"https://patentamt.at"}>Austrian Patent Office</a><br/>Software Engineer</p>
                                 <p className={"text-xl"}>Jan. 2024 - current</p>
                             </div>
                         </div>
