@@ -46,6 +46,6 @@ export default function HobbiesProjects({ files }) {
 }
 
 /*this gets the file urls from the appwrite server*/
-export async function getServerSideProps() {
+export async function getStaticProps() {
     return {props: {files: await getFileUrls()}};
 }
